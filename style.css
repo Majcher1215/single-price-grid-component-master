@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* Primary Colors */
+    --cyan: hsl(179, 62%, 43%);
+    --brightYellow: hsl(71, 73%, 54%);
+    /* Neutral Colors */
+    --lightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
+    background-color: var(--lightGray);
+}
+
+.subscription {
+    width: 85%;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+article > * {
+    margin: 1.75em;
+}
+
+#joinUs {
+    border-radius: 0.5em 0.5em 0 0;
+    background-color: white;
+}
+
+#joinUs #cyan{
+    font-size: 1.35em;
+    font-weight: 700;
+    color: var(--cyan);
+    margin: 1.25em;
+}
+
+#joinUs #brightYellow {
+    font-size: 0.95em;
+    font-weight: 700;
+    color: var(--brightYellow);
+}
+
+#joinUs p {
+    color: var(--grayishBlue);
+    font-size: 0.875em;
+    line-height: 1.5em;
+}
+
+#signUp {
+    background-color: var(--cyan);
+    padding-bottom: 2.5em;
+}
+
+#signUp h1 {
+    color: white;
+    margin: 1.5em;
+}
+
+#signUp #price {
+    display: flex;
+    align-items: center;
+    color: hsl(218, 22%, 80%);
+    margin-bottom: 0.5em;
+}
+
+#signUp #price span {
+    font-size: 2em;
+    color: white;
+    margin-right: 0.5em;
+    font-weight: 700;
+}
+
+#signUp p {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 3em;
+}
+
+#signUp a {
+    padding: 1em 6.5em;
+    border-radius: 0.5em;
+    color: white;
+    text-decoration: none;
+    background-color: var(--brightYellow);
+}
+
+#whyUs {
+    border-radius: 0 0 0.5em 0.5em;
+    background-color: hsl(179, 62%, 57.5%);
+}
+
+#whyUs h2 {
+    color: white;
+    font-size: 1.25em;
+    margin-left: 1.25em;
+    margin-bottom: 0;
+}
+
+#whyUs ol {
+    color: var(--lightGray);
+    line-height: 1.5em;
+    font-size: 0.9em;
+}
+
+/* iPads, Tablets */
+@media (min-width: 700px) and (max-width: 768px) {
+    .subscription {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #joinUs {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #joinUs #cyan {
+        margin: 1.5em 0 0.75em 1.2em;
+    }
+
+    #joinUs #brightYellow {
+        margin: 0;
+        margin-left: 1.5em;
+        font-size: 1em;
+    }
+
+    #joinUs #description {
+        margin: 1em 14em 2em 1.75em;
+    }
+
+    #signUp {
+        border-radius: 0 0 0 0.5em;
+    }
+
+
+    #whyUs {
+        border-radius: 0 0 0.5em 0;
+    }
+
+    #whyUs h2 {
+        margin-top: 1.25em;
+        margin-bottom: 0em;
+    }
+}
+
+/* Laptops */
+@media (min-width: 769px) and (max-width: 1300px){
+    .subscription {
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #joinUs {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #joinUs #cyan {
+        margin: 1.5em 0 0.75em 1.2em;
+    }
+
+    #joinUs #brightYellow {
+        margin: 0;
+        margin-left: 1.5em;
+        font-size: 1em;
+    }
+
+    #joinUs #description {
+        margin: 1em 14em 2em 1.75em;
+    }
+
+    #signUp {
+        border-radius: 0 0 0 0.5em;
+    }
+
+
+    #whyUs {
+        border-radius: 0 0 0.5em 0;
+    }
+
+    #whyUs h2 {
+        margin-top: 1.25em;
+        margin-bottom: 0em;
+    }
+}
+
+/* Desktop and Large */
+@media (min-width: 1301px) {
+    .subscription {
+        width: 50%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #joinUs {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #joinUs #cyan {
+        margin: 1.5em 0 0.75em 1.2em;
+    }
+
+    #joinUs #brightYellow {
+        margin: 0;
+        margin-left: 1.5em;
+        font-size: 1em;
+    }
+
+    #joinUs #description {
+        margin: 1em 14em 2em 1.75em;
+    }
+
+    #signUp {
+        border-radius: 0 0 0 0.5em;
+    }
+
+
+    #whyUs {
+        border-radius: 0 0 0.5em 0;
+    }
+
+    #whyUs h2 {
+        margin-top: 1.25em;
+        margin-bottom: 0em;
+    }
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
